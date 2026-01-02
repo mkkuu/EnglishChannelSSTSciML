@@ -1,5 +1,5 @@
 {
-  description = "QuantLab";
+  description = "m1Project - SciML SST Copernicus";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -23,6 +23,11 @@
           certifi
           lxml
           ipykernel
+          copernicusmarine
+          xarray
+          netcdf4
+          scipy
+          jupyterlab
         ]);
       in {
         devShells.default = pkgs.mkShell {
