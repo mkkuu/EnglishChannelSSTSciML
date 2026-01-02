@@ -16,6 +16,7 @@
           matplotlib
           yfinance
           dash
+          scikit-learn
           plotly
           dash-bootstrap-components
           curl-cffi
