@@ -1,2 +1,3 @@
-data/raw/C3S-GLO-SST-L4-REP-OBS-SST_1767389520200_part1.nc
-data/raw/C3S-GLO-SST-L4-REP-OBS-SST_1767389601469_part2.nc
+data/raw/
+data/processed/
+data/features/

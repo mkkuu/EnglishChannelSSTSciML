@@ -1,30 +1,18 @@
-# ============================================================
-# 0. Imports
-# ============================================================
-
 import xarray as xr
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 
-# ============================================================
-# 1. Charger les données Copernicus (NetCDF)
-# ============================================================
+# chargement via NedCDF (xarray lib)
 
-ds = xr.open_dataset("sst_manche_2010_2020.nc")
+ds = xr.open_dataset("../data/raw/C3S-GLO-SST-L4-REP-OBS-SST_1767389520200_part1.nc")
 print(ds)
 
-# Variable principale
-sst = ds["sst"]
+sst = ds["analysed_sst"]
 
-# Conversion en °C si nécessaire
-if sst.attrs.get("units", "").lower() in ["kelvin", "k"]:
+if sst.attrs.get("units", "").lower() in ["kelvin", "k"]: # conversion degré
     sst = sst - 273.15
     sst.attrs["units"] = "degC"
-
-# ============================================================
-# 2. Vérifications rapides
-# ============================================================
 
 print("Période :", sst.time.values[0], "→", sst.time.values[-1])
 print("Latitude :", float(sst.latitude.min()), "→", float(sst.latitude.max()))
@@ -34,25 +22,15 @@ n_lat = sst.sizes["latitude"]
 n_lon = sst.sizes["longitude"]
 print("Points spatiaux par jour :", n_lat * n_lon)
 
-# ============================================================
-# 3. Préparation des données pour PCA
-# ============================================================
+sst_flat = sst.stack(space=("latitude", "longitude")) # applatissement de l'espace
 
-# Aplatir l'espace
-sst_flat = sst.stack(space=("latitude", "longitude"))
+sst_anom = sst_flat - sst_flat.mean(dim="time") # On "retire" la moyenne de l'aplatissement
 
-# Retirer la moyenne temporelle (anomalies)
-sst_anom = sst_flat - sst_flat.mean(dim="time")
-
-# Conversion en numpy
 X = sst_anom.values  # shape = (temps, espace)
 
-# Gestion des NaN (sécurité)
-X = np.nan_to_num(X)
+X = np.nan_to_num(X) # NaN management
 
-# ============================================================
-# 4. PCA
-# ============================================================
+# PCA
 
 n_components = 3
 pca = PCA(n_components=n_components)
@@ -64,10 +42,6 @@ for i, v in enumerate(pca.explained_variance_ratio_):
     print(f"  PC{i+1}: {100*v:.2f} %")
 
 print("Variance cumulée :", 100 * pca.explained_variance_ratio_.sum(), "%")
-
-# ============================================================
-# 5. Visualisation des composantes temporelles
-# ============================================================
 
 time = sst.time.values
 
@@ -82,25 +56,15 @@ plt.ylabel("Amplitude")
 plt.tight_layout()
 plt.show()
 
-# ============================================================
-# 6. Reconstruction (optionnelle, pour validation)
-# ============================================================
-
 X_rec = pca.inverse_transform(X_pca)
 reconstruction_error = np.mean((X - X_rec)**2)
 
 print("Erreur quadratique moyenne de reconstruction :", reconstruction_error)
 
-# ============================================================
-# 7. État dynamique final pour SciML
-# ============================================================
-
-# État réduit x(t)
+# état réduit x(t)
 x_t = X_pca  # shape = (temps, n_components)
 
 print("État dynamique x(t) :", x_t.shape)
 
-# Sauvegarde pour la suite
-np.save("etat_dynamique_PCA.npy", x_t)
+np.save("../data/processed/etat_dynamique_PCA.npy", x_t)
 
-print("Pipeline terminé avec succès.")
