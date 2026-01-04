@@ -28,6 +28,7 @@
           netcdf4
           scipy
           jupyterlab
+          dask
         ]);
       in {
         devShells.default = pkgs.mkShell {
