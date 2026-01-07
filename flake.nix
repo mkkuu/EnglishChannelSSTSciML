@@ -29,6 +29,7 @@
           scipy
           jupyterlab
           dask
+          statsmodels
         ]);
       in {
         devShells.default = pkgs.mkShell {
