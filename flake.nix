@@ -1,5 +1,5 @@
 {
-  description = "m1Project - SciML SST Copernicus";
+  description = "m1Project - SciML SST";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -17,6 +17,7 @@
           matplotlib
           yfinance
           dash
+          seaborn
           scikit-learn
           plotly
           dash-bootstrap-components
@@ -43,14 +44,11 @@
             export SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt
             export REQUESTS_CA_BUNDLE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt
 
-            # Kernel Python (OK)
             if ! jupyter kernelspec list | grep -q "m1Project"; then
               python -m ipykernel install --user \
                 --name m1Project \
                 --display-name "Python m1Project"
             fi
-
-            echo "Julia available. Run Julia once to install IJulia."
           '';
         };
       });
