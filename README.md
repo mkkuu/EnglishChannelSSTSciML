@@ -1,4 +1,4 @@
-# m1Project_SciML
+# EnglishChannelSSTSciML
 
 > ### Un outil de prédiction basé sur le SciML, conçu comme une démonstration de méthodologie académique appliquée à l’analyse de données physiques.
 
