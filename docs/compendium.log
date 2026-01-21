@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  19 JAN 2026 10:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.19)  21 JAN 2026 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,13 +878,47 @@ Package: glossary-tree 2025/11/09 v4.9 (NLCT)
 \l__glossaries_tree_level_int=\count374
 \glstreeindent=\skip67
 ))
+(C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen312
+\captionmargin=\dimen313
+\caption@leftmargin=\dimen314
+\caption@rightmargin=\dimen315
+\caption@width=\dimen316
+\caption@indent=\dimen317
+\caption@parindent=\dimen318
+\caption@hangindent=\dimen319
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count375
+\c@continuedfloat=\count376
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count377
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count378
+)
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen312
-\pgfarrowlength=\dimen313
-\pgfarrowwidth=\dimen314
-\pgfarrowlinewidth=\dimen315
+\pgfarrowinset=\dimen320
+\pgfarrowlength=\dimen321
+\pgfarrowwidth=\dimen322
+\pgfarrowlinewidth=\dimen323
 )
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarypositioning.code.tex
@@ -894,15 +928,15 @@ File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \glo@main@file=\write5
 \openout5 = `compendium.glo'.
 
-Package glossaries Info: Writing glossary file compendium.glo on input line 20.
+Package glossaries Info: Writing glossary file compendium.glo on input line 21.
 
 \glo@acronym@file=\write6
 \openout6 = `compendium.acn'.
 
-Package glossaries Info: Writing glossary file compendium.acn on input line 20.
+Package glossaries Info: Writing glossary file compendium.acn on input line 21.
 
  (glossaire.tex)
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 30
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 31
 .
 
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -911,32 +945,32 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count375
+\l__color_backend_stack_int=\count379
 ) (compendium.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported on input line 18.
 )
 \openout1 = `compendium.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Info: Redefining \degres on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Info: Redefining \degres on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -976,16 +1010,16 @@ LaTeX Info: Redefining \degres on input line 30.
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count376
-\scratchdimen=\dimen316
+\scratchcounter=\count380
+\scratchdimen=\dimen324
 \scratchbox=\box73
-\nofMPsegments=\count377
-\nofMParguments=\count378
+\nofMPsegments=\count381
+\nofMParguments=\count382
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count379
-\MPscratchDim=\dimen317
-\MPnumerator=\count380
-\makeMPintoPDFobject=\count381
+\MPscratchCnt=\count383
+\MPscratchDim=\dimen325
+\MPnumerator=\count384
+\makeMPintoPDFobject=\count385
 \everyMPtoPDFconversion=\toks51
 )
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -998,41 +1032,43 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 31.
  (compendium.out) (compendium.out)
 \@outlinefile=\write7
 \openout7 = `compendium.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-3.
+4.
 
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-3.
+4.
 
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-33.
+34.
 
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-33.
+34.
 
 (C:\Users\gaoks\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 33.
+(Font)              <12> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 33.
+(Font)              <8> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 33.
+(Font)              <6> on input line 34.
 
 (compendium.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1047,12 +1083,28 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {C:/Users/gaoks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/gaok
 s/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-Overfull \hbox (2.828pt too wide) in paragraph at lines 50--52
+Overfull \hbox (2.828pt too wide) in paragraph at lines 51--53
 []\T1/lmr/m/n/10.95 un glos-saire des termes océa-no-gra-phiques et sta-tis-tiq
 ues mo-bi-lisé avec des sché-mas simples. 
  []
 
-(compendium.acr) (compendium.gls [2]) [3] (compendium.aux)
+<referenceMap.png, id=62, 433.62pt x 361.35pt>
+File: referenceMap.png Graphic file (type png)
+<use referenceMap.png>
+Package pdftex.def Info: referenceMap.png  used on input line 64.
+(pdftex.def)             Requested size: 204.86006pt x 170.71652pt.
+<mapTemporalDeviations.png, id=64, 593.3367pt x 284.7438pt>
+File: mapTemporalDeviations.png Graphic file (type png)
+<use mapTemporalDeviations.png>
+Package pdftex.def Info: mapTemporalDeviations.png  used on input line 70.
+(pdftex.def)             Requested size: 355.74222pt x 170.71652pt.
+
+Overfull \hbox (137.227pt too wide) in paragraph at lines 70--71
+ [][] 
+ []
+
+[2 <./referenceMap.png> <./mapTemporalDeviations.png>] (compendium.acr)
+(compendium.gls) [3] (compendium.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
@@ -1061,13 +1113,13 @@ Package rerunfilecheck Info: File `compendium.out' has not changed.
 (rerunfilecheck)             Checksum: EEB62B65797C99D27571911F4A92445A;2094.
  ) 
 Here is how much of TeX's memory you used:
- 29949 strings out of 467871
- 600615 string characters out of 5418376
- 1046665 words of memory out of 5000000
- 58351 multiletter control sequences out of 15000+600000
+ 31425 strings out of 467871
+ 629644 string characters out of 5418376
+ 1064197 words of memory out of 5000000
+ 59814 multiletter control sequences out of 15000+600000
  673191 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,104p,2480b,788s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,131p,2503b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gaoks/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/gaoks/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/gaoks/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
@@ -1075,9 +1127,9 @@ fb><C:/Users/gaoks/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
 b><C:/Users/gaoks/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
 ><C:/Users/gaoks/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
 <C:/Users/gaoks/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb>
-Output written on compendium.pdf (3 pages, 209148 bytes).
+Output written on compendium.pdf (3 pages, 347112 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

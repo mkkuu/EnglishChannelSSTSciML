@@ -8,6 +8,7 @@
 \usepackage{tikz}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
 \usepackage[acronym]{glossaries}
+\usepackage{subcaption}
 
 
 % Mise en Page
@@ -56,8 +57,26 @@ Ce document document a pour but de rassembler des éléments de contexte océano
  \section{Contexte océanographique de la Manche}
 
  \subsection{Cadre géographique et caractéristiques générales}
+ \begin{figure}[ht]
+  \centering
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[height=6cm]{referenceMap.png}
+    \caption{Carte de contexte géographique de la Manche.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[height=6cm]{mapTemporalDeviations.png}
+    \caption{Écart-type temporel de la SST (2010--2020).}
+  \end{subfigure}
+  \caption{Comparaison entre la carte de contexte géographique et la carte de
+  variabilité temporelle de la SST en Manche.}
+\end{figure}
 
- \subsection{Rôle climatique et dynamique générale}
+
+\subsection{Rôle climatique et dynamique générale}
+
 
  % ======== 3.Frise Chronologique ========
  \section{Evolution qualitative de la SST en Manche (2010--2020)}
