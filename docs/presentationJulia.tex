@@ -1,0 +1,136 @@
+\section{Introduction}
+
+Dans le cas des projets scientifiques et d’ingénierie, le choix du langage de programmation
+constitue un élément déterminant, tant pour la qualité des résultats obtenus que pour la 
+lisibilité du code développé.
+Les projets de modélisation numérique, de simulation ou d’analyse de données imposent en effet
+des contraintes fortes en termes de performance, de précision et de clarté de l’implémentation.
+
+Dans ce contexte le langage Julia est une alternative particulièrement pertinente comparé aux 
+langages traditionnellement utilisés dans le calcul scientifique.
+Ce document a pour objectif de présenter Julia, son origine, ses principes de fonctionnement,
+ses avantages et ses limites, ainsi que de justifier son utilisation dans le cadre de ce projet.
+
+\section{Historique et origine de Julia}
+
+Julia est un langage de programmation récent, dont le développement a débuté en 2009,
+avant d'avoir une première version publique en 2012.
+Il a été conçu par un groupe de chercheurs et d’ingénieurs issus du monde académique, confrontés
+aux limites des langages existants pour le calcul scientifique.
+
+Les créateurs de Julia sont partis d’un constat ayant le nom de
+\emph{« two-language problem »} :
+dans de nombreux projets scientifiques, un langage simple et expressif est utilisé pour le
+prototypage (comme Python ou MATLAB), tandis qu’un langage plus performant (comme C ou Fortran)
+est nécessaire pour les calculs intensifs.
+Cette séparation complexifie le développement, augmente les risques d’erreur et nuit à la
+compréhension globale du projet.
+
+Julia a ainsi été conçu avec l’ambition de réunir, au sein d’un même langage :
+\begin{itemize}
+    \item la simplicité d’écriture et la compréhension de Python,
+    \item la performance des langages compilés comme le C ou le Fortran,
+    \item les capacités de calcul matriciel de MATLAB,
+    \item et les mécanismes avancés de programmation scientifique.
+\end{itemize}
+
+\section{Qu'est-ce que le langage Julia ?}
+
+Julia est un langage de programmation de haut niveau, open-source, spécifiquement orienté vers
+le calcul scientifique, la modélisation numérique et la simulation.
+Il repose sur une compilation Just-In-Time (JIT) s’appuyant sur l’infrastructure LLVM (Low Level
+Virutal Machine), ce qui permet de générer du code machine optimisé au moment de l’exécution.
+
+Contrairement aux langages interprétés classiques, Julia est capable d’atteindre des performances
+proches de celles des langages compilés, tout en conservant une syntaxe expressive et proche
+des notations mathématiques.
+Le langage est dynamiquement typé, mais fortement optimisé grâce à l’inférence de types et à
+l’utilisation du multiple dispatch, un mécanisme central dans la conception de Julia.
+
+Julia est particulièrement adapté aux domaines suivants :
+\begin{itemize}
+    \item résolution d’équations différentielles,
+    \item calcul scientifique et numérique,
+    \item modélisation mathématique et physique,
+    \item analyse de données et simulation.
+\end{itemize}
+
+\section{Points forts de Julia}
+
+L’un des principaux atouts de Julia réside dans sa capacité à offrir des performances élevées
+sans empêcher la compréhension facile du code.
+Grâce à la compilation JIT et à une conception très performante, Julia permet d’écrire
+des algorithmes scientifiques directement en langage de haut niveau, sans nécessiter de
+réécriture dans un langage bas niveau.
+
+Parmi les principaux avantages de Julia, on peut citer :
+\begin{itemize}
+    \item \textbf{Performance native élevée} : les boucles, opérations vectorielles et calculs
+    intensifs qui sont exécutés efficacement, sans dépendre systématiquement de bibliothèques externes.
+    \item \textbf{Syntaxe mathématique expressive} : les équations et modèles sont proches de leur
+    formulation théorique, facilitant la lecture et la vérification du code.
+    \item \textbf{Unification du prototypage et de la production} : un même code peut être utilisé
+    pour tester une idée et pour réaliser des calculs à grande échelle.
+    \item \textbf{Environnement scientifique spécialisé} : Julia dispose de bibliothèques performantes
+    pour la résolution d’équations différentielles, l’optimisation et la modélisation.
+    \item \textbf{Support du parallélisme et du calcul haute performance} : le langage intègre
+    nativement des mécanismes pour le calcul parallèle et distribué.
+\end{itemize}
+
+\section{Limites et points faibles}
+
+Malgré ses nombreux avantages, Julia présente également certaines limites.
+Son environnement, bien que très actif, reste plus récent et moins vaste que celui de Python,
+ce qui peut limiter la disponibilité de certaines bibliothèques spécialisées.
+
+Par ailleurs, la compilation JIT peut entraîner un temps de latence perceptible lors du premier
+appel à certaines fonctions, notamment pour des scripts courts ou interactifs.
+Enfin, la communauté Julia étant plus restreinte, les ressources pédagogiques sont parfois moins 
+nombreuses que pour des langages plus anciens.
+
+Ces limitations restent toutefois légères dans un contexte de calcul scientifique
+intensif où la performance et la lisibilité compensent ces inconvénients.
+
+\section{Comparaison avec d'autres langages}
+
+Python est aujourd’hui largement utilisé dans le domaine scientifique, mais ses performances
+reposent essentiellement sur des bibliothèques externes écrites en C ou Fortran.
+L’écriture de code performant en Python implique souvent une dépendance forte à ces bibliothèques
+et une séparation entre logique métier et calcul intensif.
+
+MATLAB, quant à lui, offre une grande facilité d’utilisation et une forte expressivité pour
+le calcul matriciel, mais il s’agit d’un langage moins flexible et moins adapté
+à des projets complexes ou collaboratifs.
+
+Julia se positionne ainsi comme une alternative intermédiaire, combinant :
+\begin{itemize}
+    \item la performance native des langages compilés,
+    \item la lisibilité et la simplicité d’un langage de haut niveau,
+    \item la liberté offerte par un langage open-source.
+\end{itemize}
+
+\section{Pourquoi Julia pour ce projet ?}
+
+Le projet étudié repose sur des problématiques de modélisation et de simulation numérique,
+nécessitant à la fois une représentation claire des équations mathématiques et une résolution
+numérique efficace.
+Julia permet de traduire directement les modèles théoriques en code exécutable, tout en
+garantissant des performances adaptées à des calculs potentiellement coûteux.
+
+L’utilisation de Julia dans ce projet permet ainsi :
+\begin{itemize}
+    \item une meilleure cohérence entre le modèle théorique et son implémentation,
+    \item une réduction de la complexité logicielle,
+    \item une amélioration de la lisibilité et de la maintenabilité du code,
+    \item des performances compatibles avec des simulations avancées.
+\end{itemize}
+
+\section{Conclusion}
+
+Julia constitue aujourd’hui un langage particulièrement pertinent pour les projets de calcul
+scientifique et de modélisation numérique.
+En combinant performance, expressivité et simplicité d’écriture, il répond efficacement aux
+limites rencontrées avec les langages plus traditionnels.
+
+Dans le cadre de ce projet, l’utilisation de Julia s’inscrit dans une démarche cohérente visant
+à joindre rigueur scientifique, efficacité numérique et clarté de l’implémentation.
