@@ -85,7 +85,6 @@ ps = ComponentArray(ps)
 Ttrain = size(zTrain, 1)
 tspan = (0f0, Float32(Ttrain - 1))
 
-
 NODE = NeuralODE(
     dZdT,
     tspan,
