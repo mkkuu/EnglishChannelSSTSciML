@@ -61,7 +61,7 @@ for i in 1:nState
 end
 
 nbasis = length(basis)
-# println("Reduced library size = ", nbasis)
+println("Reduced library size = ", nbasis)
 
 # we build Θ function
 
