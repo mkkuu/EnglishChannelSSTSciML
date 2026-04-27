@@ -20,7 +20,7 @@ Hs = [1, 5, 10, 20, 50]
 H = 10
 λDiff = 1f-2
 
-# Place real data
+# try placing real data after tests of correct running
 Random.seed!(42)
 X = randn(Float32, obsDim, T)
 
