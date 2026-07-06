@@ -112,4 +112,4 @@ Pour plus de détails, consulter le notebook 00 concernant les sources de donné
 - **[WHenryPro](https://github.com/WHenryPro)**
 - **[Mkkuu](https://github.com/mkkuu)**
 
-Projet réalisé dans le cadre du cursus ingénieur 4e année — [Nom de l'école / cours / UE].
+Projet réalisé dans le cadre du cursus ingénieur 4e année — ISEN Yncréa Ouest
